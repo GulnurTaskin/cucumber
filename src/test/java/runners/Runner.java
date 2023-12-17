@@ -9,19 +9,23 @@ import org.junit.runner.RunWith;
         plugin = {"html:target/cucumber-reports/rapor.html",
                 "json:target/json-reports/cucumber.json",
                 "junit:target/xml-report/cucumber.xml"},
+
         features = "src/test/resources/features", // calisacak Feature/Scenario'lar nerede ?
-        glue = "stepdefinitions" ,    // calisacak Feature/Scenario'larin kodlari nerede?
+
+        glue = "stepdefinitions" ,  // calisacak Feature/Scenario'larin kodlari nerede?
+
         tags = "@wip",  // hangi Feature/Scenario'lar calisacak ?
-        dryRun = false // true yapilirsa testi calistirmadan eksik adimlari verir
+        // buraya isteidigimiz notasyonu kendimiz olusturabiliriz ex: @ilk
+        // @wip = work in progress
+
+        dryRun = false
+        // true yapilirsa testi calistirmadan eksik adimlari verir
         // testleri calistirirken dryRun = false olmalidir
 )
 
 public class Runner {
 
-
-
 }
-
 
 /*
     Runner class'i TestNG'deki xml dosyalarina benzetilebilir

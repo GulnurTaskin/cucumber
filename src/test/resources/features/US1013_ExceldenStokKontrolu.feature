@@ -1,6 +1,5 @@
 Feature:
 
-  @wip
   Scenario:TC19 verilen stok excelinde verilen min.stok degerlerine gore liste olusturulabilir
 
     Given kullanici "toUrl" anasayfaya gider
