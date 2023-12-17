@@ -7,7 +7,7 @@ import utilities.Driver;
 
 public class SaucedemoPage {
 
-    public SaucedemoPage(){
+    public SaucedemoPage(){ // ilk olarak yapacagimiz sey constractor'i public olarak gorunur hale getirmek
         PageFactory.initElements(Driver.getDriver(),this);
     }
 

@@ -6,7 +6,8 @@ import org.junit.runner.RunWith;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
-        plugin = {"html:target/cucumber-reports/rapor.html",
+        plugin = {"html:target/cucumber-reports/rapor.html", // testimizi raporlamak icin bu plugin'i ekliyoruz
+                // rapor1, rapor2.. seklinde rapor klasorleri olusturabiliriz
                 "json:target/json-reports/cucumber.json",
                 "junit:target/xml-report/cucumber.xml"},
 

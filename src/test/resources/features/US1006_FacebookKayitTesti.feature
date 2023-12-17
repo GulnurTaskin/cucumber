@@ -1,6 +1,5 @@
 Feature: US1006 Faker Class'i ile Facebook kayit testi
 
-
   Scenario: TC12 Feyk bilgilerle facebook'a kayit yapilabilmeli
 
     Given kullanici "faceUrl" anasayfaya gider
