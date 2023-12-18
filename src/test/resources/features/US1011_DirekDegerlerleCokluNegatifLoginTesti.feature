@@ -19,3 +19,7 @@ Feature: US1011 scenario'da verilen yanlis bilgilerle negatif login testi
       |zehra@zmail.com |asdf4321           |
       |ayca@amail.com  |6543241tre65       |
       |gulnur@gmail.com|123ert678          |
+
+  # bu scenerio'yu bir oncekinden kopyaladik
+  # daha sonra when ve and'deki cumleyi degistirdik
+  # o cumleleri TestotomayonuStepdefinitions'da duzenledik

@@ -3,7 +3,9 @@ package runners;
 import io.cucumber.junit.Cucumber;
 import io.cucumber.junit.CucumberOptions;
 import org.junit.runner.RunWith;
-
+// testlerimizde rapor istiyorsak bu runner class'tan calistirmamiz gerekiyor
+// cunku rapor eklentisini buraya yapacagiz
+// raporlar target'in altinda klasorleniyor
 @RunWith(Cucumber.class)
 @CucumberOptions(
         plugin = {"html:target/cucumber-reports/rapor.html", // testimizi raporlamak icin bu plugin'i ekliyoruz

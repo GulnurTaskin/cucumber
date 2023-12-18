@@ -158,7 +158,7 @@ public class TestotomasyonuStepdefinitions {
         // yine istenen satira gidip
         // o satirda belirlenen min stok miktarini aldik
         // ve bir onceki adimda buldugumuz actualStokMiktari ile karsilastirip
-        // testimizi yaptik
+        // testimizi yapacagiz
 
         String dosyaYolu = "src/test/resources/stok.xlsx";
         Workbook workbook;
@@ -178,16 +178,17 @@ public class TestotomasyonuStepdefinitions {
 
         Assert.assertTrue(actualStokMiktari >= minStokMiktari);
 
-
     }
 
-    @Then("stok excelindeki tum urunleri artip, min stok miktarinda urun olanlari listeler")
-    public void stokExcelindekiTumUrunleriArtipMinStokMiktarindaUrunOlanlariListeler() {
+    @Then("stok excelindeki tum urunleri aratip, min stok miktarinda urun olanlari listeler")
+    public void stokExcelindekiTumUrunleriAratipMinStokMiktarindaUrunOlanlariListeler() {
 
-        String dosyaYolu = "src/test/resources/stok.xlsx";
+        // excel dosyasina ulasmak icin dosya yolunu buraya string olarak tanimliyoruz
+        String dosyaYolu = "src/test/resources/stok.xlsx"; // copy path
         Workbook workbook;
-        try {
-            FileInputStream fileInputStream = new FileInputStream(dosyaYolu);
+        try { // dosyayolu'nu kullanarak fileInputStream olusturuyoruz
+            FileInputStream fileInputStream = new FileInputStream(dosyaYolu); // sorun cikarmasin diye try catch yapiyoruz
+           //
             workbook = new XSSFWorkbook(fileInputStream) ;
         } catch (IOException e) {
             throw new RuntimeException(e);
