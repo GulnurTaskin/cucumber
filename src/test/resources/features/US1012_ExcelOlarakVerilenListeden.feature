@@ -1,5 +1,5 @@
 Feature: US1012 Excel olarak verilen urunler ve min. stok miktarlari testi
-@wip
+
   Scenario Outline: : TC18 excel olarak verilen listedeki urunler min. stok bulundurmali
 # liste oldugu icin scenario outline yaptik
     Given kullanici "toUrl" anasayfaya gider
@@ -18,5 +18,10 @@ Feature: US1012 Excel olarak verilen urunler ve min. stok miktarlari testi
       |7           |
       |8           |
       |9           |
+
   # bu testi raporladigimiz zaman sadece burdaki urun miktarlari ile sonuc veriyor
-  # urun isimleri ile birlikte sonuc vermesini istersek softAssert ile yapmamiz lazim
+  # urun isimleri ile birlikte sonuc vermesini istersek softAssert ile yapmamiz lazim dedi hoca
+  # ancak assertion ile cozmek mumkun degilmis
+  # onun yerine if/else ile farkli bir cozumunu yapip, testotomasyonuStepdefinitions'a
+  # stokExcelindekiTumUrunleriAratipMinStokMiktarindaUrunOlanlariListeler olarak yeni bir method yazmisiz
+  # bir sonraki feature'de bu method kullanilmis
