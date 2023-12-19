@@ -17,7 +17,7 @@ import org.junit.runner.RunWith;
 
         glue = "stepdefinitions" ,  // calisacak Feature/Scenario'larin kodlari nerede?
 
-        tags = "@wip",  // hangi Feature/Scenario'lar calisacak ?
+        tags = "@Smoke", // hangi Feature/Scenario'lar calisacak ?
         // buraya isteidigimiz notasyonu kendimiz olusturabiliriz ex: @ilk
         // @wip = work in progress
 

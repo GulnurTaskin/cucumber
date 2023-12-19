@@ -1,4 +1,4 @@
-Feature:
+Feature: US1013 Excel olarak verilen urunler ve min. stok miktarlari testi
 
   Scenario:TC19 verilen stok excelinde verilen min.stok degerlerine gore liste olusturulabilir
 
